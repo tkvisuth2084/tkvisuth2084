@@ -1,0 +1,454 @@
+*{margin:0;
+box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 1px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-open{
+    position: fixed;
+    top: 4rem;
+    left: 3rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-open span{
+    display: flex;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 4px;
+    z-index: 1001;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: -40%;
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    border-right: 1px solid black;
+    transition: 0.5s;
+    z-index: 1001;
+
+}
+
+.nav.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    border-right: 1px solid black;
+    transition: 0.5s;
+    z-index: 1001;
+}
+
+.nav ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    z-index: 1001;
+}
+
+.nav ul li{
+    margin-top: 4rem;
+    font-family: "GoodDog Cool", sans-serif;
+    font-size: 42px;
+    z-index: 1001;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    z-index: 1001;
+}
+
+.menu-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-close span{
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background: white;
+}
+
+.menu-close :nth-child(1){
+    position: absolute;
+    left: -2px;
+    top: 7px;
+    transform: rotate(45deg);
+}
+
+.menu-close :nth-child(2){
+    position: absolute;
+    left: -2px;
+    top: 7px;
+    transform: rotate(135deg);
+}
+
+.pic1 img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+.menucentered{
+    padding-top: 11%;
+    text-align: center;
+}
+
+.menulogo {
+    display: block;
+    width: 12%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 0;
+}
+
+.menucentered h1{
+    font-family: "GoodDog Cool", sans-serif;
+    font-size: 120px;
+    margin: 3px 0;
+    padding: 0;
+}
+
+#menudhome{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.6;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+.homemenuleft{
+    display:block;
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+
+.homemenuright .pic2{
+    width: 100%;
+    display: block;
+}
+
+.homemenuright{
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+}
+
+#homebrunchbutt, #homedinnerbutt{
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 5%;
+    outline: none;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    margin-right: 4%;
+}
+
+.teamhomeleft .teampic{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1%;
+}
+
+.teamhomeleft{
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.teamcentered{
+    margin-top: 18%;
+    text-align: center;
+}
+
+.teamlogo{
+    display: block;
+    width: 12%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 0;
+}
+
+.ourteam {
+    font-family: "GoodDog Cool", sans-serif;
+    font-size: 80px;
+    margin: 3px 0;
+    padding: 0;
+}
+
+#teamdhome{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.6;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+.readmore, #clickhere{
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 5%;
+    outline: none;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+
+.teamhomeright{
+    display:block;
+    float:right;
+    width: 50%;
+    height: 100%;
+}
+
+
+.reservecentered{
+    padding-top: 30%;
+    text-align: center;
+}
+
+.reservelogo {
+    display: block;
+    width: 12%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 0;
+}
+
+.reservecentered h1{
+    font-family: "GoodDog Cool", sans-serif;
+    font-size: 120px;
+    margin: 3px 0;
+    padding: 0;
+}
+
+
+#reservehomeleft{
+    display:block;
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+
+#reservehomeright .pic4{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1.6%;
+}
+
+#reservehomeright{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin-top: 12.4%;
+    margin-bottom: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+footer{
+    margin-top: 0;
+    padding: 50px 0;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    background-color: black;
+    z-index: 0;
+}
+
+#sitemap{
+    position: absolute;
+    left: 8%;
+    color: white;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+
+#sitemap ul li{
+    list-style-type: none;
+    margin-top: 18%;
+    left: 2%;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+#location{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+}
+
+#location p{
+    margin-top: 10%;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+
+#location h2{
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+}
+
+#location .oh{
+    margin-top: 12%;
+}
+
+#contacts{
+    position: absolute;
+    right: 8%;
+    color: white;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+
+#contacts p{
+    margin-top: 10%;
+}
+
+#barreserve{
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 5%;
+    outline: none;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+#barreserve a{
+    list-style-type: none;
+}
+
+#toplogo{
+    display: block;
+    margin-left: 43%;
+    margin-right: auto;
+    width: 230px;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#reservehead{
+    margin-right: 6%;
+}
+
+.movinglogo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#movingicon{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    z-index: 1;
+}
+
+#clickhere:hover, .readmore:hover, #homebrunchbutt:hover, #homedinnerbutt:hover, #barreserve:hover{
+    background-color: black;
+    color: white;
+}
+
+#barreserve:hover{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+}
